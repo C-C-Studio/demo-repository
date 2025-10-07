@@ -38,8 +38,8 @@ body a:hover
 
 .doc-loader img
 {
-    width: 90px;
-    height: 90px;        
+    width: 500px;
+    height: 300px;       
 }
 
 .content-1170
@@ -269,7 +269,7 @@ body a:hover
 
 .top-logo
 {
-    width: 160px !important;    
+    width: 240px !important;    /* Ubah dari 160px ke 240px agar lebih besar */
     padding-top: 150px;
 }
 
