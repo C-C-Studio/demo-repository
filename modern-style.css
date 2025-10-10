@@ -1,0 +1,543 @@
+/* ========================================
+   MODERN PORTFOLIO STYLE - Purple & Orange Gradient
+   Mempertahankan font dan konten asli
+   ======================================== */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Modern Body Styling */
+body {
+    scroll-behavior: smooth;
+}
+
+body a:hover {
+    color: #f97316 !important;
+}
+
+/* ========================================
+   MODERN NAVIGATION
+   ======================================== */
+.menu-wrapper {
+    background: rgba(147, 51, 234, 0.95) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.main-menu.sm-clean a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.main-menu.sm-clean a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #f97316, #fb923c);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.main-menu.sm-clean a:hover::after {
+    width: 80%;
+}
+
+/* ========================================
+   MODERN HERO SECTION
+   ======================================== */
+.intro-page {
+    position: relative;
+    background: linear-gradient(135deg, #581c87 0%, #7c3aed 50%, #f97316 100%) !important;
+}
+
+.intro-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(demo-images/backround_code.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.intro-page .block {
+    position: relative;
+    z-index: 1;
+}
+
+.top-logo {
+    animation: fadeInDown 1s ease-out;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+h1.big-title {
+    animation: fadeInUp 1s ease-out 0.3s both;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-desc {
+    animation: fadeInUp 1s ease-out 0.6s both;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   MODERN SECTION STYLING
+   ======================================== */
+#services {
+    background: linear-gradient(to bottom, #f3f4f6, #ffffff) !important;
+}
+
+#services .section-title-holder {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%) !important;
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#services .section-title-holder:hover {
+    transform: scale(1.02);
+}
+
+#portfolio {
+    background: linear-gradient(to bottom, #ffffff, #fef3f2) !important;
+}
+
+#portfolio .section-title-holder {
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%) !important;
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+}
+
+#about {
+    background: linear-gradient(to bottom, #fef3f2, #faf5ff) !important;
+}
+
+#about .section-title-holder {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%) !important;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+}
+
+#news {
+    background: linear-gradient(to bottom, #faf5ff, #ffffff) !important;
+}
+
+#video {
+    background: linear-gradient(to bottom, #ffffff, #fef3f2) !important;
+}
+
+#video .section-title-holder {
+    background: linear-gradient(135deg, #fb923c 0%, #fdba74 100%) !important;
+    box-shadow: 0 10px 30px rgba(251, 146, 60, 0.3);
+}
+
+#skills {
+    background: linear-gradient(to bottom, #fef3f2, #f3f4f6) !important;
+}
+
+#contact {
+    background: linear-gradient(to bottom, #f3f4f6, #581c87) !important;
+}
+
+#contact .section-title-holder {
+    background: linear-gradient(135deg, #ec4899 0%, #f97316 100%) !important;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+/* ========================================
+   MODERN SERVICE CARDS
+   ======================================== */
+.service-holder {
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+
+.service-holder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.2);
+    background: rgba(255, 255, 255, 1);
+}
+
+.service-holder img {
+    transition: transform 0.3s ease;
+}
+
+.service-holder:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service-title {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========================================
+   MODERN PORTFOLIO GRID
+   ======================================== */
+.grid-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(147, 51, 234, 0.3);
+}
+
+.grid-item img {
+    transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-text-holder {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.95) 0%, rgba(249, 115, 22, 0.95) 100%) !important;
+    backdrop-filter: blur(10px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .portfolio-text-holder {
+    opacity: 1;
+}
+
+.portfolio-text, .portfolio-sec-text {
+    color: white !important;
+}
+
+.portfolio-load-more-holder {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%) !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+}
+
+.portfolio-load-more-holder:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+}
+
+/* ========================================
+   MODERN TEAM SECTION
+   ======================================== */
+.member-content-holder {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-position {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========================================
+   MODERN BLOG/NEWS SECTION
+   ======================================== */
+.blog-item-holder {
+    transition: all 0.3s ease;
+    padding: 35px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.blog-item-holder:hover {
+    background: rgba(147, 51, 234, 0.05);
+    transform: translateX(10px);
+}
+
+.blog-item-holder .num {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.blog-item-holder .info .cat-links a {
+    color: #f97316 !important;
+    transition: all 0.3s ease;
+}
+
+.blog-item-holder .info .cat-links a:hover {
+    color: #9333ea !important;
+}
+
+.latest-post-bottom-text a {
+    color: #9333ea !important;
+    border-color: #9333ea !important;
+    transition: all 0.3s ease;
+}
+
+.latest-post-bottom-text a:hover {
+    color: #f97316 !important;
+    border-color: #f97316 !important;
+}
+
+/* ========================================
+   MODERN TESTIMONIAL
+   ======================================== */
+.testimonial-slider-holder {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 4px solid #f97316;
+}
+
+/* ========================================
+   MODERN VIDEO SECTION
+   ======================================== */
+a.video-popup-holder {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+a.video-popup-holder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(147, 51, 234, 0.3);
+}
+
+img.popup-play {
+    transition: all 0.3s ease;
+}
+
+a.video-popup-holder:hover img.popup-play {
+    transform: scale(1.2);
+}
+
+/* ========================================
+   MODERN SKILLS BARS
+   ======================================== */
+.progress_bar {
+    margin-bottom: 25px;
+}
+
+.progress_bar_field_holder {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.progress_bar_field_holder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(147, 51, 234, 0.2);
+}
+
+.progress_bar_field_perecent {
+    border-radius: 30px;
+    transition: width 1s ease;
+}
+
+/* ========================================
+   MODERN CONTACT SECTION
+   ======================================== */
+.contact-form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type=text], 
+.contact-form input[type=email], 
+.contact-form textarea {
+    border-bottom: 2px solid #e5e7eb !important;
+    transition: all 0.3s ease;
+}
+
+.contact-form input[type=text]:focus, 
+.contact-form input[type=email]:focus, 
+.contact-form textarea:focus {
+    border-bottom-color: #9333ea !important;
+    outline: none;
+}
+
+.contact-form input[type=submit] {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+}
+
+.contact-form input[type=submit]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+}
+
+.contact-form a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px 0;
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
+    color: white !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+}
+
+.contact-form a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+}
+
+/* ========================================
+   MODERN FOOTER
+   ======================================== */
+footer {
+    background: linear-gradient(135deg, #581c87 0%, #7c3aed 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fb923c !important;
+    transform: translateY(-2px);
+}
+
+.social-footer a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.social-footer a:hover {
+    transform: scale(1.2);
+}
+
+/* ========================================
+   MODERN ANIMATIONS
+   ======================================== */
+.section-title-holder h2 {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.section-content-holder {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   MODERN SCROLLBAR
+   ======================================== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #7c3aed 0%, #ea580c 100%);
+}
+
+/* ========================================
+   RESPONSIVE ENHANCEMENTS
+   ======================================== */
+@media screen and (max-width: 1020px) {
+    .service-holder {
+        margin-bottom: 30px;
+    }
+    
+    .grid-item {
+        margin-bottom: 15px;
+    }
+}
